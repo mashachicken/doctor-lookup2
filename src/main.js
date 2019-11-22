@@ -13,7 +13,7 @@ import { DoctorLookups } from './doctorLookup.js'
    getElements(response);
  })();
   const getElements = function(response) {
-    console.log("hey")
+    console.log(response)
     $(".result").append(response)
   };
 });
