@@ -13,7 +13,9 @@ import { DoctorLookups } from './doctorLookup.js'
    getElements(response);
  })();
   const getElements = function(response) {
-    console.log(response)
-    $(".result").append(response)
-  };
+    response.data.forEach(function(element) {
+    console.log("ff")
+    $(".result").append(`${ element.profile.first_name}`)
+  });
+};
 });
