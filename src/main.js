@@ -2,9 +2,10 @@
 import './styles.css';
 import $ from 'jquery';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { DoctorLookups } from './doctorLookup.js';
+import { DoctorLookups } from './doctorLookup.js'
 
-  $("#userInput").submit(function(event) {
+  $("#userInput").submit(function(e) {
+    e.preventDefault()
     const location = $("#location").val();
     (async () => {
    let doctorLookup = new DoctorLookups();
@@ -12,6 +13,7 @@ import { DoctorLookups } from './doctorLookup.js';
    getElements(response);
  })();
   const getElements = function(response) {
-    $(".result").html(response)
-  }
-  })
+    console.log("hey")
+    $(".result").append(response)
+  };
+});
