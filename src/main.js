@@ -2,7 +2,7 @@
 import './styles.css';
 import $ from 'jquery';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { DoctorLookup } from './DoctorLookup.js'
+import { DoctorLookups } from './doctorLookup.js';
 
   $("#userInput").submit(function(event) {
     const location = $("#location").val();
