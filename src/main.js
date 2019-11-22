@@ -7,11 +7,11 @@ import { DoctorLookup } from './DoctorLookup.js'
   $("#userInput").submit(function(event) {
     const location = $("#location").val();
     (async () => {
-   let bikeIndex = new BikeIndex();
-   const response = await bikeIndex.getBike(city);
+   let doctorLookup = new DoctorLookups();
+   const response = await doctorLookup.getDoctor(location);
    getElements(response);
  })();
-  const getElements = function(responce) {
-    $(".result")
+  const getElements = function(response) {
+    $(".result").html(response)
   }
   })
