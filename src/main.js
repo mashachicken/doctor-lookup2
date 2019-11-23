@@ -15,7 +15,7 @@ import { DoctorLookups } from './doctorLookup.js'
   const getElements = function(response) {
     response.data.forEach(function(element) {
     console.log("ff")
-    $(".result").append(`${ element.profile.first_name}`)
+    $(".name").append(` <tr><td>${element.profile.first_name}</td></tr>`)
   });
 };
 });
