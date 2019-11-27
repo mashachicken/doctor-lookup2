@@ -21,7 +21,7 @@ module.exports = {
       title: 'project',
       template: './src/index.html',
       inject: 'body'
-    })
+    }),
   ],
   module: {
     rules: [
@@ -33,8 +33,34 @@ module.exports = {
         ]
       },
       {
-        test: /\.js$/,exclude: /node_modules/,
+        test: /\.js$/,
+        exclude: /node_modules/,
         loader: "eslint-loader"
+      },
+      {
+        test: /\.(png|jpe?g|gif)/i,
+        use: [
+          "file-loader",
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              gifsicle: {
+              interlanced: false
+            },
+            optipng: {
+              optimizationLevel: 7
+            },
+            pngquant: {
+              quality: "65-90",
+              speed: 4
+            },
+            mozjpeg: {
+              progressive: true,
+              quality: 65
+            }
+            }
+          },
+        ],
       }
     ]
   }

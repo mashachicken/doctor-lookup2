@@ -6,17 +6,17 @@
 </head>
 <body>
   <div class="container">
-    <h3> Find the nearest doctor with just one click </h3>
+    <div class="imageContainer">
+    </div>
+    <p> Find a doctor with just one click </p>
       <div class="formDiv">
         <form class="form-group" id="userInput">
-          <label for="location">Enter a location </label>
-          <input type="text" id="location"  value="or-portland"> <br>
-          <label for="input">enter something else</label>
-          <input type="text" id="input">
+          <input type="text" id="location"  value="or-portland">
+          <input type="text" id="condition" value="Condition/Symptoms">
           <button type="submit" class="btn btn-info">Search</button>
         </form>
-        <table>
-          <thead class="results">
+        <table class="doctorInfo">
+          <thead class="results"> <br> <br>
             <tr>
               <th> Name </th>
               <th> Address </th>
@@ -24,10 +24,11 @@
               <th> Accepts new patients </th>
               </tr>
                 </thead>
-            <tbody class="name">
+            <tbody class="docs">
 
             </tbody>
-              </table>
+          </table>
             </div>
+          </div>
           </body>
           </html>
