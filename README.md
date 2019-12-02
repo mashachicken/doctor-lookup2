@@ -16,7 +16,7 @@ To check out my website, visit my GitHub page. Below I will attach a direct link
 * Press enter. Your local clone will be created
 * Open the terminal
 * In the terminal, navigate to the project folder and type in "npm install". Download node if you don't have it
-* Type in "npm start"_
+* Type in "npm start"
 
 ## Known Bugs
 
