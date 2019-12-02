@@ -6,7 +6,7 @@
 
 ## Description
 
-_This is a website for searching for doctors by your location, doctor's name or symptoms. It also returns doctor's information such as their name, city, phone number and availability . _
+_This is a website for searching for doctors by your location, doctor's name or symptoms. It also returns doctor's information such as their name, city, phone number and availability._
 
 ## Setup/Installation Requirements
 
