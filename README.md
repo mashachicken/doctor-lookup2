@@ -1,6 +1,6 @@
 # _The Doctor Lookup_
 
-#### _A website for searching doctors by location, name or/and symptoms {Nov 22, 2019}
+#### A website for searching doctors by location, name or/and symptoms {Nov 22, 2019}
 
 #### By _**Masha Ivy**_
 
