@@ -10,6 +10,10 @@ _This is a website for searching for doctors by your location, doctor's name or 
 
 ## Setup/Installation Requirements
 
+## Commit History
+
+* ![Screenshot](screen.png)
+
 To check out my website, visit my GitHub page. Below I will attach a direct link to my repository
 
 * Open the terminal and enter "git clone https://github.com/mashachicken/DoctorLookup.git "
